@@ -11,15 +11,14 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
-
+  plugins: [
+    'truffle-plugin-verify'
+  ],
+  api_keys: {
+    bscscan: "95XDC1T4MB82MUXK54N1Q6QC8SSJ7VYI9E",
+    testnet: "95XDC1T4MB82MUXK54N1Q6QC8SSJ7VYI9E",
+  },
   networks: {
-    plugins: [
-      'truffle-plugin-verify'
-    ],
-    api_keys: {
-      bscscan: "95XDC1T4MB82MUXK54N1Q6QC8SSJ7VYI9E",
-      testnet: "95XDC1T4MB82MUXK54N1Q6QC8SSJ7VYI9E",
-    },
     development: {
       host: "localhost",
       port: 7545,
